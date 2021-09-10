@@ -1,0 +1,43 @@
+@import "../../../../Inicialized/variables.scss";
+
+.informativoGrado{
+    height: fit-content;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 1vw 0;
+    -webkit-box-shadow: 0px 1px 5px 0px #474747; 
+    box-shadow: 0px 1px 5px 0px #474747;
+    //sombra
+}
+
+.informativoGrado>.descripcion{
+    margin: 1vw 3vw;
+}
+
+.informativoGrado>.boton{
+    margin: 1vw 3vw;
+    background-color: $Secondary;
+    height: 2vw;
+    width: 20%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informativoGrado>.multimedia{
+    width: 60%;
+}
+
+.YoutubeInfo, .informativoGrado>.multimedia>.mediaRecurso{
+    max-height: none !important;
+}
+
+.informativoGrado>.textos{
+    flex: 1;
+}

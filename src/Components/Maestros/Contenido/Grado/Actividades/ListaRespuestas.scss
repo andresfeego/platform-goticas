@@ -1,0 +1,22 @@
+@import "../../../../../Inicialized/variables.scss";
+
+.respuestaMaestros{
+    border-bottom: $primary 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1em ;
+}
+
+.calificacionEmoji{
+    display: flex;
+    align-items: center;
+    margin: 0 1em;
+}
+
+
+.respuestaMaestros h3{
+    margin: 0em 1em;
+    flex: 1;
+}

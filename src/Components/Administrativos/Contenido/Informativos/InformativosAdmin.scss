@@ -1,0 +1,49 @@
+@import "../../../../Inicialized/variables.scss";
+@import "../../../../Inicialized/breakpoinst.scss";
+
+.adminInfor{
+    width: 85%;
+    margin: auto;
+}
+
+.agregar{
+    width: 15vw;
+    background-color: $Secondary;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+    height: 40px;
+    padding: 0.5em;
+    border-radius: 20px;
+    margin: 2em auto;
+    cursor: pointer;
+}
+
+.agregar span{
+    font-size: 1.5em;
+    flex: 1;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.agregar .iconAgregar{
+    font-size: 2.5em;
+    width: 50px;
+    color: #fff;
+}
+
+.listaInformativos{
+    @include media("<=phone"){
+        flex-direction: column;
+    }
+        
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.listaInformativos span{
+    margin: 1vw;
+}
+

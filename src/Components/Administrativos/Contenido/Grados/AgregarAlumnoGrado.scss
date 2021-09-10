@@ -1,0 +1,49 @@
+@import "../../../../Inicialized/variables.scss";
+@import "../../../../Inicialized/breakpoinst.scss";
+
+
+.alumnoAgregar{
+    @include media("<=phone"){
+        height: 10vw;
+        align-items: center;
+    }
+        
+    display: flex;
+    border-bottom: solid 1px $gray1;
+    margin-bottom: 0.5vw;
+    align-content: center;
+    height: 2.5vw;
+}
+
+.alumnoAgregar>.usuario{
+    flex: 1;
+    text-align: right;
+    margin-right: 1vw;
+}
+
+.alumnoAgregar>.agregarAl{
+    @include media("<=phone"){
+        height: 8vw;
+        width: 15vw;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    width: fit-content;
+    border-radius: 10px;
+    background-color: $Secondary;
+    padding: 0.5vw;
+    height: 1vw;
+    cursor: pointer;
+}
+
+.listaAlumnos{
+    @include media("<=phone"){
+        max-height: 40vw;
+    }
+        
+    height: fit-content;
+    max-height: 15vw;
+    overflow-y: scroll;
+}

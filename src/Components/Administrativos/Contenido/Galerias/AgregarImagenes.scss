@@ -1,0 +1,127 @@
+@import "../../../../Inicialized/variables.scss";
+@import "../../../../Inicialized/breakpoinst.scss";
+
+.imagenPreview{
+    @include media("<=phone"){
+        width: 80%;
+        height: fit-content;
+        margin: 10vw auto;
+    }
+    
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    margin: 0.2vw;
+    position: relative;
+    border: solid 1px $gray0;
+}
+
+.imagenPreview>.botones{
+    @include media("<=phone"){
+        transform: rotate(90deg); /* Équivalent à rotateZ(45deg) */
+        left: -3vw;
+        height: 10vw;
+        top: auto;
+        bottom: 11vw;
+    }
+    justify-self: center;
+    align-items: center;  
+    position: absolute;  
+    top: 45%;
+    left: 30%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.botones>.eliminar{
+    @include media("<=phone"){
+        font-size: 2em;
+        margin: 2vw 0;
+    }
+    color: $promos;
+}
+
+.botones>.flecha{
+    @include media("<=phone"){
+        font-size: 2em;
+        flex: 1;
+        width: 100%;
+    }
+    color: #fff;
+}
+
+.imagenPreview img{
+    margin: auto;
+}
+
+.listaImagenesPreview{
+    @include media("<=phone"){
+        flex-direction: column;
+    }
+        
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.estadoCarga{
+    @include media("<=phone"){
+        width: 13vw;
+        height: 13vw;
+    }
+    position: absolute;
+    bottom: 0.3vw;
+    right: 0.3vw;
+    border-radius: 50%;
+    color: #fff;
+    height: 1.8vw;
+    width: 1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.estadoCarga *{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.estadoCarga>.cargando{
+    background-color: $primaryDark;
+    animation: latidos .5s infinite;
+}
+
+.estadoCarga>.cargando span{
+    font-size: 0.5em;
+}
+
+
+.estadoCarga>.cargaOk{
+    background-color: $infos;
+}
+
+
+.estadoCarga>.cargaWrong{
+    background-color: $promos;
+}
+
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.1); }
+    to { transform: none; }
+}
+
+.tituloAgregarActividad{
+    text-align: center;
+    font-size: 1.3em;
+}

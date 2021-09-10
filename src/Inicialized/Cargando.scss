@@ -1,0 +1,38 @@
+@import "./variables.scss";
+@import "./breakpoinst.scss";
+
+.CargandoContainer{
+    @include media("<=phone"){
+        margin: 8vw auto;
+    }
+    margin: 2vw auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+.cargando{
+    @include media("<=phone"){
+        margin: 8vw auto;
+    }
+        
+    margin: 1.7vw auto;
+    font-size: 1.2em;
+    color: $primary;
+    animation: latidos .7s infinite;
+}
+
+.spinnerCargando{
+    color: $primary;
+    border-color: $primary;
+}
+
+.css-elcf9k {
+    position: absolute !important;
+    left: 0.3vw;
+    top: 0vw;
+}

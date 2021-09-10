@@ -1,0 +1,97 @@
+@import "../../../../../Inicialized/variables.scss";
+@import "../../../../../Inicialized/breakpoinst.scss";
+
+.alumnoMaestros{
+    @include media("<=phone"){
+        width: 95%;
+    }
+    width: 80%;
+    min-height: 3vw;
+    border-radius: 10px;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: solid 1px $gray1;
+}
+
+.alumnoMaestros>.nombre{
+    @include media("<=phone"){
+        font-size: 1.2em;
+        padding: 1vw;
+    }
+    background-color: $Secondary;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.alumnoMaestros>.actividadesYcalificaciones{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.listaRespuestas{
+    display: flex;
+    margin-bottom: 1.5vw;
+}
+
+.listaRespuestas>.activi{
+    @include media("<=phone"){
+        width: 20%;
+       }    
+    width: 30%;
+    text-align: right;
+    padding-right: 1vw;
+    border-right: solid 1px $primary;
+}
+
+.listaRespuestas>.respu{
+    
+    flex: 1;
+    padding-left: 0.5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.respu>.respuCal{
+    margin: 0.3vw 0;
+    display: flex;
+    border-bottom: solid 1px $gray1;
+}
+
+.respuCal>.respuCalUno{
+    @include media("<=phone"){
+     flex: 1;
+    }
+    margin-right: 0.5vw;
+
+}
+
+
+.respuCal>.respuCalDos{
+    @include media("<=phone"){
+        flex: 1;
+        text-align: left;
+       }
+    flex: 1;
+}
+
+.respuCal>.respuCalTres{
+    @include media("<=phone"){
+        width: 10vw;
+       }
+    width: 2vw;
+    color: $primary;
+    font-weight: bold;
+}
+
+.respuCal>.respuCalCuatro{
+    @include media("<=phone"){
+        width: 15vw;
+       }
+    width: 2.5vw;
+    font-size: 0.8em;
+    color: $promos;
+    opacity: 0.9;
+}

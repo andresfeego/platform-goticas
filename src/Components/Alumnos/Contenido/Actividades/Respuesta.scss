@@ -1,0 +1,25 @@
+@import "../../../../Inicialized/variables.scss";
+
+.calificacion{
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emojiCalifi{
+    width: 2vw;
+}
+
+.literalCalificacion{
+    color: teal;
+}
+
+.fondoRespuestaActividades{
+    margin: 1em 6vw 0 6vw;
+    border-radius: 20px;
+    box-shadow: 0px 1px 5px 0px #474747;
+    background-color: #ebebeb;
+}

@@ -1,0 +1,51 @@
+@import "../../Inicialized/variables.scss";
+@import "../../Inicialized/breakpoinst.scss";
+
+
+    .HeaderMaestros{
+        @include media("<=phone"){
+            height: fit-content;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        width: 100%;
+        height: 10vw;
+        background-color: $primary;
+        background-repeat: repeat;
+        background-image: url(../../img/dots-pattern.png);
+        background-position: center center;
+        opacity: 1;
+        visibility: inherit;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        position: relative;
+        align-items: center;
+    }
+    
+    .HeaderMaestros img {
+        @include media("<=phone"){
+            height: 40%;
+            margin: 5vw 1vw;
+        }
+
+        height: 70%;
+        margin: 0 0vw 0 10vw;
+    
+    }
+
+    .HeaderMaestros h1 {
+        @include media("<=phone"){
+            margin-right: 0vw;
+            width: 100%;
+            margin-bottom: 1vw;
+            height: 5vw;
+            padding-bottom: 1vw;
+        }
+        flex: 1;
+        margin-right: 25vw;
+        text-align: center;
+        color: #fff;
+
+    }

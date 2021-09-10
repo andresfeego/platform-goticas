@@ -1,0 +1,25 @@
+@import "../../../../Inicialized/variables.scss";
+
+
+
+.contenidoActividad{
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0.5em 1em;
+    -webkit-box-shadow: 0px 4px 10px 0px #474747; 
+    box-shadow: 0px 4px 10px 0px #474747;
+    position: relative;
+}
+
+.mediaRecurso{
+    width: 100%;
+    margin: 2em 0;
+}
+
+.recurso .titulo{
+    color: $primary;
+}
+
+.vistaActividad{
+    width: 100%;
+}

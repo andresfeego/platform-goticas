@@ -1,0 +1,45 @@
+@import "../../../../../Inicialized/variables.scss";
+@import "../../../../../Inicialized/breakpoinst.scss";
+
+.tituloAgregarActividad{
+    font-family: Dosis;
+}
+
+.buttonEditarActividad{
+  @include media("<=phone"){
+    left: 20vw;
+    top: 1vw;
+  }
+  position: absolute;
+  right: 3vw;
+  z-index: 2;
+}
+
+.formularioUniStep{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    border-radius: 20px;
+    align-items: center;
+  }
+
+  
+  .formularioUniStep form{
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 1em;
+  }
+  
+  .formularioUniStep form .inputform{
+    height: 80% ;
+    margin-bottom: 2em ;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 7px;
+  }
+  

@@ -1,0 +1,10 @@
+@import "../../../../Inicialized/variables.scss";
+
+.agregarInformativo{
+    width: 50%;
+    margin: auto;
+}
+
+.agregarInformativo .informativo h1{
+    background-color: $Secondary;
+}

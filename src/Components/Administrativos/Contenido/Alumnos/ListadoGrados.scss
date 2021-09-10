@@ -1,0 +1,20 @@
+@import "../../../../Inicialized/variables.scss";
+@import "../../../../Inicialized/breakpoinst.scss";
+
+.ListadoGrados{
+    @include media("<=phone"){
+        width: 100%;
+    }
+    width: 50%;
+    margin: auto;
+}
+
+
+
+.nuevoGrado{
+    background-color: $Secondary;
+}
+
+.nuevoGrado span{
+    margin-left: 1vw;
+}

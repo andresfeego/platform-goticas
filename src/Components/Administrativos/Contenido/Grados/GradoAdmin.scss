@@ -1,0 +1,52 @@
+@import "../../../../Inicialized/variables.scss";
+@import "../../../../Inicialized/breakpoinst.scss";
+
+.listaGrados{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradoAdmin{
+    @include media("<=phone"){
+        width: 90%;
+        height: 15vw;
+    }
+        
+    width: 50%;
+    height: 2.5vw;
+    margin: 1em auto 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 5px 0px #474747; 
+    box-shadow: 0px 1px 5px 0px #474747;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.gradoAdmin span{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradoAdmin>.menuGrado{
+    position: absolute;
+    top: 0.7em;
+    right: 0.5em;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

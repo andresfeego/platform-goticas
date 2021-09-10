@@ -1,0 +1,43 @@
+@import "../../../../../Inicialized/variables.scss";
+@import "../../../../../Inicialized/breakpoinst.scss";
+
+
+.contenidoActividad{
+    width: 90%;
+    margin: auto;
+}
+
+.contenidoActividad{
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0em 1em;
+    -webkit-box-shadow: 0px 4px 10px 0px #474747; 
+    box-shadow: 0px 4px 10px 0px #474747;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contenidoActividad .tituloMateria{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $third;
+    font-size: 1.5em;
+}
+
+.contenidoActividad h1{
+    margin-top: 1.5em;
+}
+
+.mediaRecurso{
+  
+    width: 100%;
+    margin: 2em 0;
+}
+
+.recurso .titulo{
+    color: $primary;
+}

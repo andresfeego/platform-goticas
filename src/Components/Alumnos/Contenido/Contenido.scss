@@ -1,0 +1,9 @@
+@import "../../../Inicialized/variables.scss";
+@import "../../../Inicialized/breakpoinst.scss";
+
+
+.Botonera>.buttonMargin1{
+    @include media("<=phone"){
+        font-size: 0.9em;
+    }
+}
